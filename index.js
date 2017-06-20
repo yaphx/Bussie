@@ -21,7 +21,7 @@ var luisAppId = process.env.LuisAppId;
 var luisAPIKey = process.env.LuisAPIKey;
 var luisAPIHostName = process.env.LuisAPIHostName || 'westus.api.cognitive.microsoft.com';
 
-const LuisModelUrl = 'https://' + luisAPIHostName + '/luis/v1/application?id=7d007a50-abce-4160-85da-c83f18d11ac2' + luisAppId + '&subscription-key=04d10deea0a5477382b6e6b45a3765bc' + luisAPIKey;
+const LuisModelUrl = 'https://' + luisAPIHostName + '/luis/v1/application?id=' + luisAppId + '&subscription-key=' + luisAPIKey;
 
 //Api for singapore bus timings
 var busUrl = "http://datamall2.mytransport.sg/ltaodataservice/BusArrival?";
