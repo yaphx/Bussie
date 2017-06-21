@@ -16,16 +16,12 @@ var connector = useEmulator ? new builder.ChatConnector() : new botbuilder_azure
 var bot = new builder.UniversalBot(connector);
 bot.localePath(path.join(__dirname, './locale'));
 
-// Make sure you add code to validate these fields (For commit)
+// Make sure you add code to validate these fields
 var luisAppId = process.env.LuisAppId;
 var luisAPIKey = process.env.LuisAPIKey;
 var luisAPIHostName = process.env.LuisAPIHostName || 'westus.api.cognitive.microsoft.com';
 
 const LuisModelUrl = 'https://' + luisAPIHostName + '/luis/v1/application?id=' + luisAppId + '&subscription-key=' + luisAPIKey;
-<<<<<<< HEAD
-=======
-
->>>>>>> d64a5ef706a19eff50ad1e04686f3267533adc3e
 //Api for singapore bus timings
 var busUrl = "http://datamall2.mytransport.sg/ltaodataservice/BusArrival?";
 var ltaApiKey = "myXxi8YCTaGZEWA74qGhag==";
